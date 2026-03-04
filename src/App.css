@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: system-ui, Arial, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  margin-bottom: 16px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchForm input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.searchForm input:focus {
+  border-color: #aaa;
+}
+
+.hint {
+  margin-top: 14px;
+  opacity: 0.7;
+}
+
+.loading {
+  margin-top: 14px;
+}
+
+.error {
+  margin-top: 14px;
+  color: #b00020;
+  font-weight: 600;
 }
 
 .card {
-  padding: 2em;
+  margin-top: 18px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
-.read-the-docs {
-  color: #888;
+.name {
+  text-transform: capitalize;
+  margin: 0 0 12px;
+}
+
+.img {
+  width: 240px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 14px;
+}
+
+.info p {
+  margin: 6px 0;
 }
